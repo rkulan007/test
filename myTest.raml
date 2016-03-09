@@ -1,0 +1,22 @@
+#%RAML 0.8
+title: MyAPI
+version: V0.1
+#baseUri: http://localhost:8082/api
+baseUri: http://mocksvc.mulesoft.com/mocks/8ae897a4-c807-4cce-8f06-f9c51cd0d845/api
+
+/Test:
+  description: myDesc
+  get:
+    queryParameters:
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+                   {
+                     "data": {
+                       "name": "Malin"                       
+                     },
+                     "success": true,
+                     "status": 200
+                   }
